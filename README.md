@@ -1,12 +1,12 @@
-# Knowledge
-Knowledge
+# Deep Learning Experience
+
 During learning is a neural network. It uses randomness in two ways:
 
 * Random initial weights (model coefficients).
 * Random shuffle of samples each epoch.
 * Try taking an existing model and retraining a new input and output layer for your problem **(transfer learning)**
 
-# Good configuration for your problem.
+## Good configuration for your problem.
 
 * Try one hidden layer with a lot of neurons (wide).
 * Try a deep network with few neurons per layer (deep).
