@@ -15,3 +15,4 @@ During learning is a neural network. It uses randomness in two ways:
 * Try topology patterns (fan out then in) and rules of thumb from books and papers (see links below).
 ## Batches and Epochs
 The batch size defines the gradient and how often to update weights. An epoch is the entire training data exposed to the network, batch-by-batch.
+Some network architectures are more sensitive than others to batch size. I see Multilayer Perceptrons as often robust to batch size, whereas LSTM and CNNs quite sensitive, but that is just anecdotal.
