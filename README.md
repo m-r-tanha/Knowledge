@@ -26,3 +26,8 @@ During learning is a neural network. It uses randomness in two ways:
 ## Batches and Epochs
 The batch size defines the gradient and how often to update weights. An epoch is the entire training data exposed to the network, batch-by-batch.
 Some network architectures are more sensitive than others to batch size. I see Multilayer Perceptrons as often robust to batch size, whereas LSTM and CNNs quite sensitive, but that is just anecdotal.
+## Common Regularization Methods
+1. **Early stopping:** stop training automatically when a specific performance measure (eg. Validation loss, accuracy) stops improving
+2. **Weight decay:** incentivize the network to use smaller weights by adding a penalty to the loss function (this ensures that the norms of the weights are relatively evenly distributed amongst all the weights in the networks, **which prevents just a few weights from heavily influencing network output).**
+3. **Noise:** allow some random fluctuations in the data through augmentation (which makes the network robust to a larger distribution of inputs and hence improves generalization).
+4. **Model combination:** average the outputs of separately trained neural networks (requires a lot of computational power, data, and time).
