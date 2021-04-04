@@ -13,3 +13,5 @@ During learning is a neural network. It uses randomness in two ways:
 * Try combinations of the above.
 * Try architectures from recent papers on problems similar to yours.
 * Try topology patterns (fan out then in) and rules of thumb from books and papers (see links below).
+## Batches and Epochs
+The batch size defines the gradient and how often to update weights. An epoch is the entire training data exposed to the network, batch-by-batch.
