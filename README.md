@@ -28,7 +28,7 @@ The batch size defines the gradient and how often to update weights. An epoch is
 Some network architectures are more sensitive than others to batch size. I see Multilayer Perceptrons as often robust to batch size, whereas LSTM and CNNs quite sensitive, but that is just anecdotal.
 ## Common Regularization Methods
 1. **Dropout** in machine learning refers to the process of randomly ignoring certain nodes in a layer during training.
-2. **Early stopping:** stop training automatically when a specific performance measure (eg. Validation loss, accuracy) stops improving
+2. **Early stopping:** stop training automatically when a specific performance measure (eg. Validation loss, accuracy) stops improving. It is a kind of cross-validation strategy where we keep one part of the training set as the validation set. When we see that the performance on the validation set is getting worse, we immediately stop the training on the model. This is known as early stopping
 3. **Weight decay:** incentivize the network to use smaller weights by adding a penalty to the loss function (this ensures that the norms of the weights are relatively evenly distributed amongst all the weights in the networks, **which prevents just a few weights from heavily influencing network output).**
 4. **Noise:** allow some random fluctuations in the data through augmentation (which makes the network robust to a larger distribution of inputs and hence improves generalization).
 5. **Model combination:** average the outputs of separately trained neural networks (requires a lot of computational power, data, and time).
