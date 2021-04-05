@@ -3,7 +3,7 @@
 1. **Baseline**. Simple forecasting methods such as persistence and averages.
 2. **Autoregression**. The Box-Jenkins process and methods such as SARIMA.
 3. **Exponential Smoothing**. Single, double and triple exponential smoothing methods.
-4. **Linear Machine Learning**. Linear regression methods and variants such as regularization.
+4. **Linear Machine Learning**. Linear regression methods and variants such as regularization.
 5. **Nonlinear Machine Learning**. kNN, decision trees, support vector regression and
 more.
 6. **Ensemble Machine Learning**. Random forest, gradient boosting, stacking and more.
