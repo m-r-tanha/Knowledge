@@ -32,3 +32,6 @@ Some network architectures are more sensitive than others to batch size. I see M
 3. **Weight decay:** incentivize the network to use smaller weights by adding a penalty to the loss function (this ensures that the norms of the weights are relatively evenly distributed amongst all the weights in the networks, **which prevents just a few weights from heavily influencing network output).**
 4. **Noise:** allow some random fluctuations in the data through augmentation (which makes the network robust to a larger distribution of inputs and hence improves generalization).
 5. **Model combination:** average the outputs of separately trained neural networks (requires a lot of computational power, data, and time).
+
+## Reducing the variance
+A successful approach to reducing the variance of neural network models is to train multiple models instead of a single model and to combine the predictions from these models. This is called **Ensemble Learning** and not only reduces the variance of predictions but also can result in predictions that are better than any single model.
