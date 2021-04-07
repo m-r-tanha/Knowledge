@@ -35,3 +35,6 @@ Some network architectures are more sensitive than others to batch size. I see M
 
 ## Reducing the variance
 A successful approach to reducing the variance of neural network models is to train multiple models instead of a single model and to combine the predictions from these models. This is called **Ensemble Learning** and not only reduces the variance of predictions but also can result in predictions that are better than any single model.
+1. Neural network models are nonlinear and have a high variance, which can be frustrating when preparing a final model for making predictions.
+2. Ensemble learning combines the predictions from multiple neural network models to reduce the variance of predictions and reduce generalization error.
+3. Techniques for ensemble learning can be grouped by the element that is varied, such as training data, the model, and how predictions are combined.
