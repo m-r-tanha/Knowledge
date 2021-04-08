@@ -29,7 +29,7 @@ more.
 * Try architectures from recent papers on problems similar to yours.
 * Try topology patterns (fan out then in) and rules of thumb from books and papers.
 
-## Callback Function** 
+## Callback Function
 1. **keras.callbacks.History()** This is automatically included in .fit().
 2. **keras.callbacks.ModelCheckpoint** which saves the model with its weights at a certain point in the training. This can prove useful if your model is running for a long time and a system failure happens. Not all is lost then. It's a good practice to save the model weights only when an improvement is observed as measured by the acc, for example.
 3. **keras.callbacks.EarlyStopping** stops the training when a monitored quantity has stopped improving.
