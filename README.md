@@ -9,6 +9,11 @@ more.
 6. **Ensemble Machine Learning**. Random forest, gradient boosting, stacking and more.
 7. **Deep Learning**. MLPs, CNNs, LSTMs, and Hybrid models.
 
+**We should compare the performance of various algorithms in terms of their:**
+1. Convergence (how fast they reach the answer)
+2 Precision (how close do they approximate the exact answer)
+3. Robustness (do they perform well for all functions or just a small subset)
+4. General performance (e.g. computational complexity)
 
 During learning is a neural network. It uses randomness in two ways:
 
