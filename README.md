@@ -57,3 +57,6 @@ A successful approach to reducing the variance of neural network models is to tr
 For this you need to understand what filters does actually.
 In every layer filters are there to capture patterns. For example in the **first layer** filters capture patterns like **edges, corners, dots** etc. In the **subsequent layers** we **combine those patterns to make bigger patterns**. Like combine edges to make squares, circle etc.
 Now as we move forward in the layers the patterns gets more complex, hence larger combinations of patterns to capture. That's why we increase filter size in the subsequent layers to capture as many combinations as possible.
+
+## ConvLSTM 
+It is a type of recurrent neural network for spatio-temporal prediction that has convolutional structures in both the input-to-state and state-to-state transitions. 
