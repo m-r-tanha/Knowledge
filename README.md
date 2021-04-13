@@ -65,3 +65,4 @@ The **LSTM** cell input is a set of data over time, that is, a 3D tensor with sh
 
 ### Overfitting and Underfitting
 ![Plot Behav](https://github.com/m-r-tanha/Knowledge/blob/main/VsrRD.png)
+![Erly Stop](https://github.com/m-r-tanha/Knowledge/commit/0e9cde6a5a573032a241b602d50d012141db9306)
