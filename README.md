@@ -72,3 +72,7 @@ The **LSTM** cell input is a set of data over time, that is, a 3D tensor with sh
 ### Overfitting and Underfitting
 ![Plot Behav](https://github.com/m-r-tanha/Knowledge/blob/main/VsrRD.png)
 ![Early Stop](https://github.com/m-r-tanha/Knowledge/blob/main/early%20stopping.png)
+- If validation loss >> training loss you can call it overfitting.
+- If validation loss  > training loss you can call it some overfitting.
+- If validation loss  < training loss you can call it some underfitting.
+- If validation loss << training loss you can call it underfitting.
