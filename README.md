@@ -58,10 +58,11 @@ A successful approach to reducing the variance of neural network models is to tr
 2. Ensemble learning combines the predictions from multiple neural network models to reduce the variance of predictions and reduce generalization error.
 3. Techniques for ensemble learning can be grouped by the element that is varied, such as training data, the model, and how predictions are combined.
 
-## in CNN why # of filter is in increasing order?
-For this you need to understand what filters does actually.
+## In CNN and LSTM # of filter and hidden layer?
+1. **CNN:**For this you need to understand what filters does actually.
 In every layer filters are there to capture patterns. For example in the **first layer** filters capture patterns like **edges, corners, dots** etc. In the **subsequent layers** we **combine those patterns to make bigger patterns**. Like combine edges to make squares, circle etc.
 Now as we move forward in the layers the patterns gets more complex, hence larger combinations of patterns to capture. That's why we increase filter size in the subsequent layers to capture as many combinations as possible.
+2. **LSTM:** Ultimately, hidden layers can help improve the accuracy of a model but only up to a certain point. Determining how many hidden layers a model should have is as much an art as a science, and is highly dependent on the type of data you are analyzing.
 
 ## ConvLSTM 
 It is a type of recurrent neural network for spatio-temporal prediction that has convolutional structures in both the input-to-state and state-to-state transitions. 
