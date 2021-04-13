@@ -34,7 +34,9 @@ more.
 2. **keras.callbacks.ModelCheckpoint** which saves the model with its weights at a certain point in the training. This can prove useful if your model is running for a long time and a system failure happens. Not all is lost then. It's a good practice to save the model weights only when an improvement is observed as measured by the acc.
 The EarlyStopping callback will stop training once triggered, but the model at the end of training may not be the model with **best performance on the validation dataset**.
 An additional callback is required that will **save the best model observed during training for later use. This is the ModelCheckpoint callback.**
-  3. mc = ModelCheckpoint('best_model.h5', monitor='val_loss', mode='min', save_best_only=True)
+- mc = ModelCheckpoint('best_model.h5', monitor='val_accuracy', mode='max', verbose=1, save_best_only=True)
+- es = EarlyStopping(monitor='val_loss', mode='min', verbose=1, patience=200)
+- fit(trainX, trainy, validation_data=(testX, testy), epochs=4000, verbose=0, callbacks=[es, mc])
 4. **keras.callbacks.EarlyStopping** stops the training when a monitored quantity has stopped improving.
 5. **keras.callbacks.LearningRateScheduler** will change the learning rate during training.
 
