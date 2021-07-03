@@ -19,7 +19,7 @@ more.
 
 * Random initial weights (model coefficients).
 * Random shuffle of samples each epoch.
-* Try taking an existing model and retraining a new input and output layer for your problem **(transfer learning)**
+* Try taking an existing model and retraining a new input and output layer for your problem **(transfer learning)** :In deep learning, this means reusing the weights in one or more layers from a pre-trained network model in a new model and either keeping the weights fixed, fine tuning them, or adapting the weights entirely when training the model.
 
 ## Good configuration for your problem.
 
