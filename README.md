@@ -83,3 +83,7 @@ The **LSTM** cell input is a set of data over time, that is, a 3D tensor with sh
 - **Relative Squared Error (RSE):** A relative metric between 0 and 1 based on the square of the differences between predicted and true values. The closer to 0 this metric is, the better the model is performing. Because this metric is relative, it can be used to compare models where the labels are in different units.
 - **Relative Absolute Error (RAE):** A relative metric between 0 and 1 based on the absolute differences between predicted and true values. The closer to 0 this metric is, the better the model is performing. Like RSE, this metric can be used to compare models where the labels are in different units.
 - **Coefficient of Determination (R2):** This metric is more commonly referred to as R-Squared, and summarizes how much of the variance between predicted and true values is explained by the model. The closer to 1 this value is, the better the model is performing.
+
+
+# Convolutional neural networks
+https://docs.microsoft.com/en-us/learn/modules/train-evaluate-deep-learn-models/4-convolutional-neural-networks
