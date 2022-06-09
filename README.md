@@ -91,3 +91,16 @@ https://docs.microsoft.com/en-us/learn/modules/train-evaluate-deep-learn-models/
 ### Pooling layers
 After extracting feature values from images, pooling (or downsampling) layers are used to reduce the number of feature values while retaining the key differentiating features that have been extracted.
 One of the most common kinds of pooling is max pooling in which a filter is applied to the image, and only the maximum pixel value within the filter area is retained.
+
+### Flattening layers
+After using convolutional and pooling layers, the resulting feature maps are multidimensional arrays of pixel values. A flattening layer is used to flatten the feature maps into a vector of values that can be used as input to a fully connected layer.
+
+### A CNN consisting of a convolutional layer, a pooling layer, a dropping layer, a flattening layer, and a fully connected layer
+
+Images are fed into a convolutional layer. In this case, there are two filters, so each image produces two feature maps.
+The feature maps are passed to a pooling layer, where a 2x2 pooling kernel reduces the size of the feature maps.
+A dropping layer randomly drops some of the feature maps to help prevent overfitting.
+A flattening layer takes the remaining feature map arrays and flattens them into a vector.
+The vector elements are fed into a fully connected network, which generates the predictions. In this case, the network is a classification model that predicts probabilities for three possible image classes (triangle, square, and circle).
+### Training a CNN model
+As with any deep neural network, a CNN is trained by passing batches of training data through it over multiple epochs, adjusting the weights and bias values based on the loss calculated for each epoch. In the case of a CNN, backpropagation of adjusted weights includes filter kernel weights used in convolutional layers as well as the weights used in fully connected layers.
