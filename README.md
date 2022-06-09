@@ -87,3 +87,7 @@ The **LSTM** cell input is a set of data over time, that is, a 3D tensor with sh
 
 # Convolutional neural networks
 https://docs.microsoft.com/en-us/learn/modules/train-evaluate-deep-learn-models/4-convolutional-neural-networks
+
+### Pooling layers
+After extracting feature values from images, pooling (or downsampling) layers are used to reduce the number of feature values while retaining the key differentiating features that have been extracted.
+One of the most common kinds of pooling is max pooling in which a filter is applied to the image, and only the maximum pixel value within the filter area is retained.
