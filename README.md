@@ -104,3 +104,6 @@ A flattening layer takes the remaining feature map arrays and flattens them into
 The vector elements are fed into a fully connected network, which generates the predictions. In this case, the network is a classification model that predicts probabilities for three possible image classes (triangle, square, and circle).
 ### Training a CNN model
 As with any deep neural network, a CNN is trained by passing batches of training data through it over multiple epochs, adjusting the weights and bias values based on the loss calculated for each epoch. In the case of a CNN, backpropagation of adjusted weights includes filter kernel weights used in convolutional layers as well as the weights used in fully connected layers.
+
+### MinMaxScaler
+The main reason that you add the scaler to the pipeline is to prevent leaking the information from your test set to your model. When you fit the pipeline to your training data, the MinMaxScaler keeps the min and max of your training data. It will use these values to scale any other data that it may see for prediction
