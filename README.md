@@ -113,3 +113,8 @@ intrinsic, wrapper, filter methods.
 - Intrinsic: Algorithms that perform automatic feature selection during training.
 - Filter: Select subsets of features based on their relationship with the target.
 - Wrapper: Search subsets of features that perform according to a predictive model.
+### To evaluate the performance of the supervised learning algorithm, 
+we would use metrics like accuracy, precision, and recall. Accuracy measures the overall accuracy of the model, while precision measures the proportion of true positives among the predicted positives, and recall measures the proportion of true positives among all actual positives.
+
+### To evaluate the performance of unsupervised learning algorithms,
+we would often use measures such as silhouette score, inertia, and completeness score. Inertia measures how spread out clusters are and silhouette score measures how well-defined clusters are. Completeness score measures the extent to which all members of a given class are classified in the same cluster.
