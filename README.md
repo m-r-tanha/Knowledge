@@ -107,3 +107,9 @@ As with any deep neural network, a CNN is trained by passing batches of training
 
 ### MinMaxScaler
 The main reason that you add the scaler to the pipeline is to prevent leaking the information from your test set to your model. When you fit the pipeline to your training data, the MinMaxScaler keeps the min and max of your training data. It will use these values to scale any other data that it may see for prediction
+
+### Supervised feature selection methods may further be classified into three groups, including
+intrinsic, wrapper, filter methods.
+- Intrinsic: Algorithms that perform automatic feature selection during training.
+- Filter: Select subsets of features based on their relationship with the target.
+- Wrapper: Search subsets of features that perform according to a predictive model.
